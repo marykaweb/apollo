@@ -1,0 +1,83 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+h1 strong {
+  font-weight: 700;
+}
+p {
+  display: inline-block;
+  font-family: 'LMRomanSlant10', serif;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+div.letter {
+  padding-left: 9px;
+  position: absolute;
+}
+div.letter img {
+  opacity: .05;
+}
+.header_text {
+  font-family: 'LMRomanSlant10', serif;
+  font-size: 18px;
+  height: 100px;
+  overflow: hidden;
+  padding-top: 29px;
+  position: static;
+  width: 450px;
+}
+.header_h1 {
+  padding-top: 240px;
+}
+.container {
+  height: 749px;
+  background: url("/img/bg/img_header_man.png") no-repeat #efefef;
+  position: relative;
+}
+.header_title {
+  padding-left: 180px;
+}
+.menu {
+  position: absolute;
+  right: 0;
+  margin: 39px 39px 0 20px;
+}
+.menu p {
+  text-transform: uppercase;
+}
+.menu a {
+  padding-left: 20px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+.navigation li {
+  display: none;
+  align-self: flex-end;
+  padding-top: 10px;
+}
+.navigation_items {
+  list-style-type: none;
+}
+/* Fonts */
+@font-face {
+  font-family: 'LMRomanSlant10';
+  src: url('/fonts/lmroman/LMRomanSlant10-Regular.woff2') format('woff2'), url('/fonts/lmroman/LMRomanSlant10-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
