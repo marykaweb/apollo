@@ -45,6 +45,10 @@ a {
 .letter_p img {
   opacity: .05;
 }
+.page_wrap {
+  width: 1500px;
+  margin: 0 auto;
+}
 .header_text {
   font-size: 18px;
   height: 100px;
