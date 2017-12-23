@@ -94,6 +94,10 @@ a {
 .navigation li:not(.menu_icons) a:hover {
   font-size: 22px;
   transition: all .2s ease;
+  display: block;
+}
+.navigation:hover li {
+  display: block;
 }
 .navigation_items {
   list-style-type: none;
