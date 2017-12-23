@@ -39,7 +39,7 @@ a {
   opacity: .05;
 }
 .letter_p {
-  padding-left: 9px;
+  padding-left: 94px;
   position: absolute;
 }
 .letter_p img {
@@ -93,7 +93,7 @@ a {
 }
 .navigation li:not(.menu_icons) a:hover {
   font-size: 22px;
-  transition: all 2s ease;
+  transition: all .2s ease;
 }
 .navigation_items {
   list-style-type: none;
