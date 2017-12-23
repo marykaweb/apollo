@@ -1,11 +1,13 @@
     $('.menu').hover(function(){ // задаем функцию при наведении курсора на элемент
-        $('.navigation li').css({
-            "display": "block",
-            "float": "left"
-        });
-        $('.navigation li a').css({
-            "padding-top": "10px"
-        })
+        $('.navigation li').fadeIn('slow').css(
+            {
+                display: 'block'
+            }
+        );
     }, function() { // задаем функцию, которая срабатывает, когда указатель выходит из элемента
-        $('.navigation li').css("display", "none") // задаем цвет заднего фона
+        $('.navigation li:not(.menu_icons)').css(
+            {
+                display: "none"
+             }
+        )
     });

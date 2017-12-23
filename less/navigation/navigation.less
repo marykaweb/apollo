@@ -1,28 +1,41 @@
 .menu {
+  display: flex;
+  align-items: baseline;
   position: absolute;
   right: 0;
   margin: 39px 39px 0 20px;
   p {
     text-transform: uppercase;
-  }
-  a {
-    padding-left: 20px;
+    font-family: Raleway, serif;
+    font-size: 18px;
   }
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
-  li{
+  width: 40px;
+  li:not(.menu_icons) {
     display: none;
-    align-self: flex-end;
-    padding-top: 10px;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-top: 15px;
     a {
-
+      font-family: Raleway, serif;
+      font-size: 18px;
+      color: #000000;
+      &:hover {
+        font-size: 22px;
+        transition: all 2s ease;
+      }
     }
   }
 }
 
 .navigation_items {
   list-style-type: none;
+  }
+
+.menu_icons {
+  align-self: flex-end;
 }
