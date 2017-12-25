@@ -110,7 +110,23 @@ a {
   align-self: flex-end;
 }
 .about {
+  position: relative;
   background-color: #efefef;
+}
+.img_photo {
+  padding-left: 41px;
+  padding-top: 78px;
+  width: 625px;
+  height: 628px;
+}
+.line {
+  vertical-align: middle;
+  padding-right: 40px;
+}
+.about_text {
+  position: absolute;
+  top: 150px;
+  right: 195px;
 }
 /* Fonts */
 @font-face {
