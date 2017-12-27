@@ -1,5 +1,5 @@
 .about {
-  position: relative;
+  display: flex;
   background-color: #efefef;
 }
 
@@ -16,7 +16,29 @@
 }
 
 .about_text {
-  position: absolute;
-  top: 150px;
-  right: 195px;
+  padding-top: 150px;
+  padding-right: 195px;
+  p {
+    padding-top: 35px;
+  }
+}
+
+.social_icons {
+  display: flex;
+  padding-top: 67px;
+}
+
+.social_items {
+  background-color: #909090;
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+  display: flex;
+  img {
+    align-self: center;
+    margin: 0 auto;
+  }
+  &:hover {
+    background-color: #020202;
+  }
 }
