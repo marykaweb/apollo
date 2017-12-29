@@ -189,6 +189,16 @@ a {
   display: block;
   margin: 0 auto;
 }
+.gallery_wrapper {
+  overflow: hidden;
+  height: 750px;
+  width: 1480px;
+  margin: 0 auto;
+}
+.gallery_list {
+  list-style: none;
+  width: 1480px;
+}
 /* Fonts */
 @font-face {
   font-family: 'LMRomanSlant10';
