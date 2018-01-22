@@ -52,17 +52,19 @@
     </div>
     <!-- /about -->
     <!-- gallery -->
-    <div class="container gallery">
+    <div class="container block-for-slider">
         <div class="letter_o"><img src="/img/letter/letter_o_white.png"/></div>
-        <a class="button_prev"><div class="arrow arrowleft"><img src="/img/button/arrow_left.png" alt=""/></div></a>
-        <a class="button_next"><div class="arrow arrowright"><img src="/img/button/arrow_right.png" alt=""/></div></a>
-            <div class="gallery_wrapper">
-                <ul class="gallery_list">
-            <li class="gallery_photo"><img src="/img/gallery/photo_slide.jpg" alt=""/></li>
-            <li class="gallery_photo"><img src="/img/gallery/photo_block_info.jpg" alt=""/></li>
-            <li class="gallery_photo"><img src="/img/gallery/photo_slide.jpg" alt=""/></li>
+            <div class="viewport">
+                <ul data-current='0' class="slidewrapper">
+            <li class="slide"><img src="/img/gallery/photo_slide.jpg" alt=""/></li>
+            <li class="slide"><img src="/img/gallery/photo_block_info.jpg" alt=""/></li>
+            <li class="slide"><img src="/img/gallery/photo3_gallery2_slide.jpg" alt=""/></li>
                 </ul>
             </div>
+    </div>
+    <div id="prev-next-btns">
+        <div id="prev-btn"></div>
+        <div id="next-btn"></div>
     </div>
     <!-- /gallery -->
 </div>
