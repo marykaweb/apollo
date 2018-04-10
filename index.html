@@ -5,6 +5,7 @@
     <title>Apollo</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="page_wrap">
@@ -52,23 +53,115 @@
     </div>
     <!-- /about -->
     <!-- gallery -->
-    <div class="container block-for-slider">
-        <div class="letter_o"><img src="/img/letter/letter_o_white.png"/></div>
-            <div class="viewport">
-                <ul data-current='0' class="slidewrapper">
-            <li class="slide"><img src="/img/gallery/photo_slide.jpg" alt=""/></li>
-            <li class="slide"><img src="/img/gallery/photo_block_info.jpg" alt=""/></li>
-            <li class="slide"><img src="/img/gallery/photo3_gallery2_slide.jpg" alt=""/></li>
-                </ul>
-            </div>
-    </div>
-    <div id="prev-next-btns">
-        <div id="prev-btn"></div>
-        <div id="next-btn"></div>
+    <div id="w">
+        <div class="letter_o"><img src="img/letter/letter_o_white.png"/></div>
+    <div class="slider">
+        <ul class="slides">
+            <li class="slide">
+                <figure>
+                    <img src="img/gallery/photo1_gallery2_slide.jpg" alt="dribbble witches">
+                </figure>
+            </li>
+            <li class="slide">
+                <figure>
+                    <img src="img/gallery/photo2_gallery2_slide.jpg" alt="searing mountain illustration">
+                </figure>
+            </li>
+            <li class="slide">
+                <figure>
+                    <img src="img/gallery/photo3_gallery2_slide.jpg" alt="taipei fireworks">
+                </figure>
+            </li>
+            <li class="slide">
+                <figure>
+                    <img src="img/gallery/photo_block_info.jpg" alt="coffee cup iphone newspaper">
+                </figure>
+            </li>
+            <li class="slide">
+                <figure>
+                    <img src="img/gallery/photo_slide.jpg" alt="flying super squirrel">
+                </figure>
+            </li>
+        </ul>
+    </div><!-- @end .slider -->
     </div>
     <!-- /gallery -->
+    <!-- pregallery -->
+    <div class="container pregallery">
+        <div class="letter_l"><img src="img/letter/letter_l.png"/></div>
+        <div class="pregallery_title">
+            <h1 class="pregallery_h1"><strong>Ut enim</strong> ad minim</h1>
+            <p class="pregallery_text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="pre_photo">
+            <img src="img/gallery/photo_block_info.jpg"/>
+        </div>
+    </div>
+    <!-- /pregallery -->
+    <!-- galleryCarousel -->
+    <div id="w">
+        <div class="slider">
+            <ul class="slides">
+                <li class="slide">
+                    <figure>
+                        <img src="img/gallery/photo1_gallery2_slide.jpg" alt="dribbble witches">
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <img src="img/gallery/photo2_gallery2_slide.jpg" alt="searing mountain illustration">
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <img src="img/gallery/photo3_gallery2_slide.jpg" alt="taipei fireworks">
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <img src="img/gallery/photo_block_info.jpg" alt="coffee cup iphone newspaper">
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <img src="img/gallery/photo_slide.jpg" alt="flying super squirrel">
+                    </figure>
+                </li>
+            </ul>
+        </div><!-- @end .slider -->
+    </div>
+    <!-- /galleryCarousel -->
+    <!-- footer -->
+    <div class="container footer center">
+        <div class="letter_o2"><img src="img/letter/letter_o.png"/></div>
+        <div class="footer_title">
+            <h1 class="footer_h1"><strong>Say</strong> Hello</h1>
+            <p class="footer_text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+        </div>
+        <div class="footer_contact">
+            <form name="contact" method="post" action="forma.php">
+            <input type="text" value="Your Email" name="mail"/>
+            <input type="text" size="20" value="Subject" name="subject"/><br />
+                <textarea rows="10" cols="45" name="text"></textarea><br />
+            <input type="button" value="send message" />
+            </form>
+        </div>
+    </div>
+    <!-- /footer -->
+
 </div>
-<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/js/js.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.slider').glide({
+            hoverpause: true, // set to false for nonstop rotate
+            arrowRightText: '&rsaquo;',
+            arrowLeftText: '&lsaquo;'
+        });
+    });
+</script>
+<script type="text/javascript" src="js/jquery.glide.min.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
 </body>
 </html>
