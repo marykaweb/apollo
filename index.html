@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Apollo</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<div class="page_wrap">
     <!-- header -->
 <header>
-    <div class="container header">
-        <div class="menu">
-            <p>menu</p>
-            <ul class="navigation">
-                <li class="navigation_items menu_icons"><a class="link_icons" href="#"><img src="img/icons/icon_menu.png"></a></li>
-                <li class="navigation_items"><span><a href="#">About</a></span></li>
-                <li class="navigation_items"><span><a href="#">Gallery</a></span></li>
-                <li class="navigation_items"><span><a href="#">Link</a></span></li>
-                <li class="navigation_items"><span><a href="#">Photo</a></span></li>
-                <li class="navigation_items"><span><a href="#">Contact</a></span></li>
-            </ul>
-        </div>
+    <div class="container-fluid header">
+            <div class="navigation-block">
+                <div class="navigation-block__button">
+                menu
+                    <img class="navigation-block__button-img" src="img/icons/icon_menu.png">
+                </div>
+                <ul class="navigation-block__list">
+                    <li class="navigation__items"><span><a class="navigation__items-link" href="#">About</a></span></li>
+                    <li class="navigation__items"><span><a class="navigation__items-link" href="#">Gallery</a></span></li>
+                    <li class="navigation__items"><span><a class="navigation__items-link" href="#">Link</a></span></li>
+                    <li class="navigation__items"><span><a class="navigation__items-link" href="#">Photo</a></span></li>
+                    <li class="navigation__items"><span><a class="navigation__items-link" href="#">Contact</a></span></li>
+                </ul>
+            </div>
         <div class="letter_a"><img src="img/letter/letter_a.png"/></div>
-        <div class="header_title">
-            <h1 class="header_h1"><strong>Apollo</strong> PSD Template</h1>
-            <p class="header_text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <div class="header-block">
+            <h1 class="header-block__title"><strong class="header-block__title--bold">Apollo</strong> PSD Template</h1>
+            <p class="header-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         </div>
     </div>
 </header>
     <!-- /header -->
-    <!-- about -->
-    <div class="container about">
+<!-- about -->
+    <div class="container-fluid about">
         <div class="letter_p"><img src="img/letter/letter_p.png"/></div>
         <div class="img_photo"><img src="img/image/img_photo.png"/></div>
-        <article class="about_text">
-            <h1><img class="line" src="img/image/line.jpg"/>My name is <strong>Apollo</strong></h1>
+        <article class="about-block">
+            <h1 class="about-block__title"><img class="line" src="img/image/line.jpg"/>My name is <strong class="about-block__title--bold">Apollo</strong></h1>
             <section>
-            <p class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+            <p class="about-block__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
                 natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                 dolores eos qui ratione voluptatem sequi nesciunt.
             <p class="text">Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
@@ -52,107 +54,9 @@
             </article>
     </div>
     <!-- /about -->
-    <!-- gallery -->
-    <div id="w">
-        <div class="letter_o"><img src="img/letter/letter_o_white.png"/></div>
-    <div class="slider">
-        <ul class="slides">
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo1_gallery2_slide.jpg" alt="dribbble witches">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo2_gallery2_slide.jpg" alt="searing mountain illustration">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo3_gallery2_slide.jpg" alt="taipei fireworks">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo_block_info.jpg" alt="coffee cup iphone newspaper">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo_slide.jpg" alt="flying super squirrel">
-                </figure>
-            </li>
-        </ul>
-    </div><!-- @end .slider -->
-    </div>
-    <!-- /gallery -->
-    <!-- pregallery -->
-    <div class="container pregallery">
-        <div class="letter_l"><img src="img/letter/letter_l.png"/></div>
-        <div class="pregallery_title">
-            <h1 class="pregallery_h1"><strong>Ut enim</strong> ad minim</h1>
-            <p class="pregallery_text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <div class="pre_photo">
-            <img src="img/gallery/photo_block_info.jpg"/>
-        </div>
-    </div>
-    <!-- /pregallery -->
-    <!-- galleryCarousel -->
-    <div id="w">
-        <div class="slider">
-            <ul class="slides">
-                <li class="slide">
-                    <figure>
-                        <img src="img/gallery/photo1_gallery2_slide.jpg" alt="dribbble witches">
-                    </figure>
-                </li>
-                <li class="slide">
-                    <figure>
-                        <img src="img/gallery/photo2_gallery2_slide.jpg" alt="searing mountain illustration">
-                    </figure>
-                </li>
-                <li class="slide">
-                    <figure>
-                        <img src="img/gallery/photo3_gallery2_slide.jpg" alt="taipei fireworks">
-                    </figure>
-                </li>
-                <li class="slide">
-                    <figure>
-                        <img src="img/gallery/photo_block_info.jpg" alt="coffee cup iphone newspaper">
-                    </figure>
-                </li>
-                <li class="slide">
-                    <figure>
-                        <img src="img/gallery/photo_slide.jpg" alt="flying super squirrel">
-                    </figure>
-                </li>
-            </ul>
-        </div><!-- @end .slider -->
-    </div>
-    <!-- /galleryCarousel -->
-    <!-- footer -->
-    <div class="container footer center">
-        <div class="letter_o2"><img src="img/letter/letter_o.png"/></div>
-        <div class="footer_title">
-            <h1 class="footer_h1"><strong>Say</strong> Hello</h1>
-            <p class="footer_text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-        </div>
-        <div class="footer_contact">
-            <form name="contact" method="post" action="forma.php">
-            <input type="text" value="Your Email" name="mail"/>
-            <input type="text" size="20" value="Subject" name="subject"/><br />
-                <textarea rows="10" cols="45" name="text"></textarea><br />
-            <input type="button" value="send message" />
-            </form>
-        </div>
-    </div>
-    <!-- /footer -->
 
-</div>
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
     $(function(){
         $('.slider').glide({
             hoverpause: true, // set to false for nonstop rotate
@@ -160,8 +64,7 @@
             arrowLeftText: '&lsaquo;'
         });
     });
-</script>
-<script type="text/javascript" src="js/jquery.glide.min.js"></script>
-<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+</script> -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>

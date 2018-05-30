@@ -1,36 +1,41 @@
-/* Base */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-body {
-  margin: 0 auto;
-  padding: 50px;
-}
-.page_wrap {
-  width: 100%;
-}
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-}
-h1 strong {
-  font-weight: 700;
-}
-p.text {
-  display: inline-block;
-  font-family: 'LMRomanSlant10', serif;
-  font-size: 18px;
-}
-a {
-  text-decoration: none;
-  height: 100%;
-}
-.container {
+.header {
+  background: url("../img/bg/img_header_man.png") no-repeat #efefef;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  width: 100vw;
   height: 749px;
   margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+.header-block {
+  padding-left: 180px;
+  display: inline-block;
+  margin-top: 243px;
+}
+.header-block__title {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 30.46px;
+  margin-bottom: 29px;
+  font-weight: 100;
+}
+.header-block__title--bold {
+  font-weight: 700;
+}
+.header-block__subtitle {
+  height: 95px;
+  overflow: hidden;
+  width: 450px;
+  color: #000;
+  font-family: 'LMRomanSlant10';
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
 }
 .letter_a {
   padding-left: 9px;
@@ -66,72 +71,57 @@ a {
 .letter_l img {
   opacity: .05;
 }
-.page_wrap {
-  width: 1500px;
-  margin: 0 auto;
-}
-.center {
-  text-align: center;
-}
-.header_text {
-  font-size: 18px;
-  height: 100px;
-  overflow: hidden;
-  padding-top: 29px;
-  position: static;
-  width: 450px;
-}
-.header_h1 {
-  padding-top: 240px;
-}
-.header {
-  background: url("/img/bg/img_header_man.png") no-repeat #efefef;
-  position: relative;
-}
-.header_title {
-  padding-left: 180px;
-}
-.menu {
-  display: flex;
-  align-items: baseline;
+
+.navigation-block {
   position: absolute;
+  height: auto;
   right: 0;
-  margin: 39px 39px 0 20px;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.menu p {
+.navigation-block__button {
   text-transform: uppercase;
   font-family: Raleway, serif;
   font-size: 18px;
+  margin-right: 60px;
+  margin-top: 39px;
+  cursor: pointer;
 }
-.navigation {
-  display: flex;
-  flex-direction: column;
-  width: 40px;
+.navigation-block__button:hover + .navigation-block__list,
+.navigation-block__list:hover {
+    visibility: visible;
+    opacity: 1;
+      -webkit-transition: all .5s ease-in;
+     -moz-transition: all .5s ease-in;
+      -ms-transition: all .5s ease-in;
+       -o-transition: all .5s ease-in;
+          transition: all .5s ease-in;
 }
-.navigation li:not(.menu_icons) {
-  display: none;
-  align-self: flex-start;
-  justify-content: flex-start;
+.navigation-block__button-img {
+  padding-left: 20px;
+}
+.navigation-block__list {
+  padding-left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.navigation__items {
+  list-style-type: none;
   padding-top: 15px;
 }
-.navigation li:not(.menu_icons) a {
+.navigation__items-link {
+  color: #000;
   font-family: Raleway, serif;
   font-size: 18px;
-  color: #000000;
+  text-transform: uppercase;
 }
-.navigation li:not(.menu_icons) a:hover {
-  font-size: 22px;
-  transition: all .2s ease;
-  display: block;
-}
-.navigation:hover li {
-  display: block;
-}
-.navigation_items {
-  list-style-type: none;
-}
-.menu_icons {
-  align-self: flex-end;
+.navigation__items-link:hover, .navigation__items:hover {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 .about {
   display: flex;
@@ -147,11 +137,23 @@ a {
   vertical-align: middle;
   padding-right: 40px;
 }
-.about_text {
+.about-block__title {
+  width: 611px;
+  color: #000;
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 30.46px;
+  margin-bottom: 29px;
+  font-weight: 100;
+}
+.about-block__title--bold {
+  font-weight: 700;
+}
+.about-block {
   padding-top: 150px;
   padding-right: 195px;
 }
-.about_text p {
+.about-block__text {
   padding-top: 35px;
 }
 .social_icons {
@@ -395,11 +397,4 @@ input[type="button"] {
 input[type="button"]:hover {
   background: white;
   color: #000;
-}
-/* Fonts */
-@font-face {
-  font-family: 'LMRomanSlant10';
-  src: url('/fonts/lmroman/LMRomanSlant10-Regular.woff2') format('woff2'), url('/fonts/lmroman/LMRomanSlant10-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
 }
