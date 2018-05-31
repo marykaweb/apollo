@@ -1,38 +1,5 @@
     
-    <!-- gallery -->
-    <div id="w">
-        <div class="letter_o"><img src="img/letter/letter_o_white.png"/></div>
-    <div class="slider">
-        <ul class="slides">
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo1_gallery2_slide.jpg" alt="dribbble witches">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo2_gallery2_slide.jpg" alt="searing mountain illustration">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo3_gallery2_slide.jpg" alt="taipei fireworks">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo_block_info.jpg" alt="coffee cup iphone newspaper">
-                </figure>
-            </li>
-            <li class="slide">
-                <figure>
-                    <img src="img/gallery/photo_slide.jpg" alt="flying super squirrel">
-                </figure>
-            </li>
-        </ul>
-    </div><!-- @end .slider -->
-    </div>
-    <!-- /gallery -->
+    
     <!-- pregallery -->
     <div class="container pregallery">
         <div class="letter_l"><img src="img/letter/letter_l.png"/></div>
