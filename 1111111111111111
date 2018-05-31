@@ -1,19 +1,6 @@
     
     
-    <!-- pregallery -->
-    <div class="container pregallery">
-        <div class="letter_l"><img src="img/letter/letter_l.png"/></div>
-        <div class="pregallery_title">
-            <h1 class="pregallery_h1"><strong>Ut enim</strong> ad minim</h1>
-            <p class="pregallery_text text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-        <div class="pre_photo">
-            <img src="img/gallery/photo_block_info.jpg"/>
-        </div>
-    </div>
-    <!-- /pregallery -->
+    
     <!-- galleryCarousel -->
     <div id="w">
         <div class="slider">

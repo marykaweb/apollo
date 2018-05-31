@@ -60,8 +60,11 @@
 .letter_p {
   padding-left: 94px;
   position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  display: flex;
 }
 .letter_p img {
   opacity: .05;
@@ -126,6 +129,7 @@
   cursor: pointer;
 }
 .img_photo {
+  width: auto;
   padding-left: 41px;
   padding-top: 78px;
 }
@@ -138,6 +142,7 @@
   background-color: #efefef;
   width: 100%;
   margin-bottom: 50px;
+  position: relative;
 }
 .about-block__title {
   color: #000;
@@ -180,31 +185,51 @@
   background-color: #020202;
 }
 .gallery {
-  width: 100%;
+  margin-bottom: 50px;
 }
 .pregallery {
   display: flex;
   background-color: #efefef;
+  height: 750px;
+  margin-bottom: 50px;
 }
-.pregallery_text {
+.pregallery-title {
+  margin-left: 184px;
+}
+.pregallery-text {
   font-size: 18px;
-  height: 100px;
+  height: 155px;
   overflow: hidden;
   padding-top: 29px;
   position: static;
-  width: 450px;
+  width: 417px;
+  color: #000;
+  font-family: 'LMRomanSlant10';
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25px;
 }
-.pregallery_h1 {
+.pregallery-h1 {
   padding-top: 240px;
+  color: #000;
+  font-family: "Raleway";
+  font-size: 50px;
+  line-height: 30.46px;
+  font-weight: 100;
+}
+.pregallery-h1--bold {
+  font-weight: 700;
 }
 .pregallery_title {
   padding-left: 180px;
 }
+.pre_photo {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 .pre_photo img {
-  width: 750px;
-  height: 450px;
+  width: 100%;
   padding-right: 85px;
-  padding-top: 150px;
   padding-left: 55px;
 }
 .footer {
@@ -256,15 +281,26 @@ input[type="button"]:hover {
   color: #000;
 }
 .slider {
-   text-align:center;
-   height: 750px;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  align-content: center;
    overflow: hidden;
 }
 .slider-img {
-  background-color: red;
+  outline: none;
 }
 .slider-img img {
-  display: inline-block;
   width: 100%;
-  height: 100%;
+  display: inline-block;  
+  height: 750px;
+}
+.slider2 {
+
+}
+.slider2-img {
+  outline: none;
+}
+.slider2-img img {
+
 }
