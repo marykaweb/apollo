@@ -1,31 +1,37 @@
-$(document).ready(function(){
-	$('.single-item').slick();
+$(document).ready(function () {
 
-	// slider center mode
-	$('.centermode').slick({
-	  centerMode: true,
-	  centerPadding: '60px',
-	  slidesToShow: 3,
-	  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+  var carousel = $("#waterwheel-carousel").waterwheelCarousel({
+    separation: 330,
+    separationMultiplier: 1,
+    horizonOffsetMultiplier: 1,
+    sizeMultiplier: 1
+  });
+
+   $('.slider1-move-left').bind('click', function() {
+   carousel.prev();
+   return false
+ });
+
+ $('.slider1-move-right').bind('click', function() {
+   carousel.next();
+   return false;
+ });
+
+ var carousel2 = $("#waterwheel-carousel-center").waterwheelCarousel({
+    separation: 330,
+    separationMultiplier: 3,
+    horizonOffsetMultiplier: 1,
+    sizeMultiplier: 0.6
+  });
+
+    $('.slider2-move-left').bind('click', function() {
+   carousel2.prev();
+   return false
+ });
+
+ $('.slider2-move-right').bind('click', function() {
+   carousel2.next();
+   return false;
+ });
 
 });
