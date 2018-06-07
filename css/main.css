@@ -273,6 +273,7 @@
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
+  position: relative;
 }
 input {
   border: 1px solid black;
@@ -292,9 +293,10 @@ input[name="mail"],
 input[name="subject"] {
   font-size: 16px;
   margin-bottom: 30px;
+  width: 277px;
 }
 input[name="subject"] {
-  margin-left: 30px;
+  margin-left: 26px;
 }
 input[placeholder] {
   padding-left: 20px;
@@ -302,7 +304,7 @@ input[placeholder] {
 textarea {
   border: 1px solid black;
   margin-top: 30px;
-  width: 590px;
+  width: 585px;
   height: 130px;
   resize: none;
   outline: none;
@@ -317,8 +319,9 @@ input[type="submit"] {
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  width: 585px;
 }
-input[type="button"]:hover {
+input[type="submit"]:hover {
   background: white;
   color: #000;
 }
@@ -408,6 +411,38 @@ input[type="button"]:hover {
 #waterwheel-carousel-center img {
   visibility:hidden; /* hide images until carousel positions them */
   cursor:pointer;
+}
+/* popUp */
+.popup {
+  background-color: gray;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 30px;
+  position: fixed;
+  z-index: 999;
+  top: 40%;
+  left: 40%;
+}
+.popup-close {
+  height: 15px;
+  width: 15px;
+  background-image: url(../img/icons/popup-close.png);
+  -webkit-background-size: 15px 15px;
+       -o-background-size: 15px 15px;
+          background-size: 15px 15px;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.popup--hide {
+  display: none;
 }
 /* media */
 @media (max-width: 1280px) {
