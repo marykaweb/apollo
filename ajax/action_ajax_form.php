@@ -1,4 +1,3 @@
 <?php
-echo "Спасибо за обращение! ";
-echo "Я свяжусь с вами в ближайшее время.";
+echo "Thank you! See you later!";
 ?>
