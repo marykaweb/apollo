@@ -5,9 +5,9 @@ $( document ).ready(function() {
         var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
         var mail = $('[data-field-mail]').val().trim();
         var message = $('[data-field-message]').val().trim();
-        var errormail = $('<div class="error-block"><div class="alert alert-danger alert-mail-hide" role="alert" data-error-mail>Введите email</div></div>');
-        var errorformatmail = $('<div class="error-block"><div class="alert alert-danger alert-message-hide" role="alert" data-error-formatmail>Некорректный email</div></div>');
-        var errortext = $('<div class="error-block"><div class="alert alert-danger alert-message-hide" role="alert" data-error-message>Введите текст сообщения</div></div>');   
+        var errormail = $('<div class="alert alert--mail alert-danger" role="alert" data-error-mail>Введите email</div>');
+        var errorformatmail = $('<div class="alert alert--mail alert-danger" role="alert" data-error-formatmail>Некорректный email</div>');
+        var errortext = $('<div class="alert alert--text alert-danger" role="alert" data-error-message>Введите текст сообщения</div>');   
         
         if ( pattern.test( mail ) ) {
             $('[data-error-mail]').fadeOut();
@@ -23,11 +23,12 @@ $( document ).ready(function() {
                 
             }
         } else if ( mail == '' ) {
+            $('[data-field-mail]').before(errormail);
+
             $('[data-error-mail]').fadeIn();
 
             $('[data-field-mail]').on('focus', function(){
                 $('[data-error-mail]').fadeOut();
-                errormail.remove();
             });
 
              $('[data-field-message]').on('focus', function(){
@@ -35,6 +36,9 @@ $( document ).ready(function() {
             });
 
         } else {
+
+            $('[data-field-mail]').before(errorformatmail);
+
             $('[data-error-formatmail]').fadeIn();
 
             $('[data-field-mail]').on('focus', function(){
@@ -47,6 +51,9 @@ $( document ).ready(function() {
         }
 
         if ( message == '') {
+
+            $('[data-field-subject]').after(errortext);
+
             $('[data-error-message]').fadeIn();
             $('[data-field-mail]').on('focus', function(){
                 $('[data-error-formatmail]').fadeOut();
