@@ -211,6 +211,11 @@
   height: 33px;
   margin-right: 20px;
   display: flex;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+      -ms-transition: all .5s ease-in;
+       -o-transition: all .5s ease-in;
+          transition: all .5s ease-in;
 }
 .social_items img {
   align-self: center;
