@@ -110,15 +110,18 @@
         </div>
         <div class="footer-contact">
             <form name="contact" method="post" action="" id="ajax_form">
+            <div class="error-block">
             <div class="alert alert-danger alert-mail-hide" role="alert" data-error-mail>Введите email</div>
             <div class="alert alert-danger alert-message-hide" role="alert" data-error-message>Введите текст сообщения</div>
             <div class="alert alert-danger alert-message-hide" role="alert" data-error-formatmail>Некорректный email</div>
+            </div>
             <input type="text" placeholder="Your Email" name="mail" data-field-mail/>
             <input type="text" size="20" placeholder="Subject" name="subject"/><br />
                 <textarea rows="10" cols="45" name="text" data-field-message></textarea><br />
             <input type="submit" value="send message" class="button" id="btn" />
             </form>
             <div class="popup popup--hide"></div>
+
             
         </div>
     </div>

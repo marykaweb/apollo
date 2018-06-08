@@ -5,7 +5,9 @@ $( document ).ready(function() {
         var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
         var mail = $('[data-field-mail]').val().trim();
         var message = $('[data-field-message]').val().trim();
-        
+        var errormail = $('<div class="error-block"><div class="alert alert-danger alert-mail-hide" role="alert" data-error-mail>Введите email</div></div>');
+        var errorformatmail = $('<div class="error-block"><div class="alert alert-danger alert-message-hide" role="alert" data-error-formatmail>Некорректный email</div></div>');
+        var errortext = $('<div class="error-block"><div class="alert alert-danger alert-message-hide" role="alert" data-error-message>Введите текст сообщения</div></div>');   
         
         if ( pattern.test( mail ) ) {
             $('[data-error-mail]').fadeOut();
@@ -25,7 +27,13 @@ $( document ).ready(function() {
 
             $('[data-field-mail]').on('focus', function(){
                 $('[data-error-mail]').fadeOut();
+                errormail.remove();
             });
+
+             $('[data-field-message]').on('focus', function(){
+                $('[data-error-message]').fadeOut();
+            });
+
         } else {
             $('[data-error-formatmail]').fadeIn();
 
@@ -61,9 +69,14 @@ $( document ).ready(function() {
             $('.popup-close').on('click', function(){
                 $('.popup').fadeOut();
             });
-            
-            text = "";
 
+            $(document).mouseup(function (e) {
+            var popup = $('.popup');
+            if (popup.has(e.target).length === 0){
+                popup.fadeOut(1000);
+            }
+            });
+            
             }
         });
     }

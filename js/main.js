@@ -59,17 +59,59 @@ $(document).ready(function () {
         + '<a class="navigation__items-link mobile-item" href="#photo">Photo</a>'
         + '<a class="navigation__items-link mobile-item" href="#contact">Contact</a>'
         + '</div>'
+        + '<div class="mobile-menu-close"></div>'
         + '</div>');
 
       $('.mobile-item').on('click', function(){
         $('.mobile-menu-block').css('display', 'none');
       });
 
-
+      $('.mobile-menu-close').on('click', function(){
+                $('.mobile-menu-block').fadeOut();
+            });
     });
 
-
-    
-
   }
+
+  // click on .navigation-block__button
+  var blockmenu = $('<div class="blockmenu">'
+                  + '<div class="blockmenu-close"></div>'
+                  + '<a class="navigation__items-link blockmenu-item" href="#about">About</a>'
+                  + '<a class="navigation__items-link blockmenu-item" href="#gallery">Gallery</a>'
+                  + '<a class="navigation__items-link blockmenu-item" href="#link">Link</a>'
+                  + '<a class="navigation__items-link blockmenu-item" href="#photo">Photo</a>'
+                  + '<a class="navigation__items-link blockmenu-item" href="#contact">Contact</a>'
+                  + '</div>');
+  $('.navigation-block__button').on('click', function(){
+    console.log('click');
+    $('.header').append(blockmenu);
+
+    $('.blockmenu').animate({
+            right: '0'
+        }, 200);
+
+    $('.blockmenu-close').on('click', function(){
+      $('.blockmenu').animate({
+            right: '-30%'
+        }, 200);
+    });
+
+    $('.blockmenu-item').on('click', function(){
+      $('.blockmenu').animate({
+            right: '-30%'
+        }, 200);
+    });
+
+    $(document).mouseup(function (e) {
+        if ($('.blockmenu').has(e.target).length === 0){
+          $('.blockmenu').animate({
+          right: '-30%'
+          }, 200);
+        }
+      });
+
+  });
+
+  
+      
 });
