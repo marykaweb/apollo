@@ -409,23 +409,26 @@ input[type="submit"]:hover {
   margin: 0 auto;
 }
 #waterwheel-carousel-center img {
-  visibility:hidden; /* hide images until carousel positions them */
+  visibility:hidden;
   cursor:pointer;
 }
 /* popUp */
 .popup {
-  background-color: gray;
-  width: 300px;
-  height: 150px;
+  background-color: rgba(128, 128, 128, 0.8);
+  width: 600px;
+  height: 300px;
   display: flex;
   text-align: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
           align-items: center;
   padding: 30px;
   position: fixed;
   z-index: 999;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  padding-top: 100px;
+  font-size: 26px;
 }
 .popup-close {
   height: 15px;
@@ -444,9 +447,23 @@ input[type="submit"]:hover {
 .popup--hide {
   display: none;
 }
+.alert-mail-hide {
+  display: none;
+}
+.alert-message-hide {
+  display: none;
+}
 /* media */
-@media (max-width: 1280px) {
-  .about {
+@media (max-width: 1050px) {
+  .footer-h1 {
+    padding-top: 70px;
+  }
+  .footer-text {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1199px) {
+    .about {
     height: auto;
   }
   .about-block {
@@ -455,12 +472,52 @@ input[type="submit"]:hover {
   .img_photo img {
     width: 550px;
   }
-}
-@media (max-width: 1050px) {
-  .footer-h1 {
-    padding-top: 70px;
+  .navigation-block__list {
+    display: none;
   }
-  .footer-text {
-    margin-bottom: 70px;
+ .mobile-menu-block {
+  background: rgba(128, 128, 128, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: block;    
+  z-index: 1500;
+}
+  .mobile-menu {
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+            align-items: center;
+    padding-top: 30vh;
+  }
+  .mobile-item {
+    font-size: 32px;
+  }
+  .mobile-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 770px) {
+  .img_photo {
+   display: none;
+  }
+  .footer-title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .pre_photo {
+    display: none;
+  }
+  .pregallery {
+    text-align: center;
+  }
+  .pregallery-title {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
