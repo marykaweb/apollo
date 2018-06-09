@@ -37,14 +37,18 @@ $(document).ready(function () {
    carousel2.next();
    return false;
  });
+ 
 // slide
-  $(function(){
-          $("a[href^='#']").click(function(){
-                  var _href = $(this).attr("href");
-                  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                  return false;
-          });
-  });
+  function scrollLink() {
+    $(function(){
+            $(".scrolllink").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    return false;
+            });
+    });
+  }
+
 
 // media
   var doc_w = $(document).width();
@@ -53,11 +57,11 @@ $(document).ready(function () {
     $('.navigation-block__button').on('click', function(){
       $('.header').append('<div class="mobile-menu-block">'
         + '<div class="mobile-menu">'
-        + '<a class="navigation__items-link mobile-item" href="#about">About</a>'
-        + '<a class="navigation__items-link mobile-item" href="#gallery">Gallery</a>'
-        + '<a class="navigation__items-link mobile-item" href="#link">Link</a>'
-        + '<a class="navigation__items-link mobile-item" href="#photo">Photo</a>'
-        + '<a class="navigation__items-link mobile-item" href="#contact">Contact</a>'
+        + '<a class="navigation__items-link mobile-item scrolllink" href="#about">About</a>'
+        + '<a class="navigation__items-link mobile-item scrolllink" href="#gallery">Gallery</a>'
+        + '<a class="navigation__items-link mobile-item scrolllink" href="#link">Link</a>'
+        + '<a class="navigation__items-link mobile-item scrolllink" href="#photo">Photo</a>'
+        + '<a class="navigation__items-link mobile-item scrolllink" href="#contact">Contact</a>'
         + '</div>'
         + '<div class="mobile-menu-close"></div>'
         + '</div>');
@@ -76,11 +80,11 @@ $(document).ready(function () {
   // click on .navigation-block__button
   var blockmenu = $('<div class="blockmenu">'
                   + '<div class="blockmenu-close"></div>'
-                  + '<a class="navigation__items-link blockmenu-item" href="#about">About</a>'
-                  + '<a class="navigation__items-link blockmenu-item" href="#gallery">Gallery</a>'
-                  + '<a class="navigation__items-link blockmenu-item" href="#link">Link</a>'
-                  + '<a class="navigation__items-link blockmenu-item" href="#photo">Photo</a>'
-                  + '<a class="navigation__items-link blockmenu-item" href="#contact">Contact</a>'
+                  + '<a class="navigation__items-link blockmenu-item scrolllink" href="#about">About</a>'
+                  + '<a class="navigation__items-link blockmenu-item scrolllink" href="#gallery">Gallery</a>'
+                  + '<a class="navigation__items-link blockmenu-item scrolllink" href="#link">Link</a>'
+                  + '<a class="navigation__items-link blockmenu-item scrolllink" href="#photo">Photo</a>'
+                  + '<a class="navigation__items-link blockmenu-item scrolllink" href="#contact">Contact</a>'
                   + '</div>');
   $('.navigation-block__button').on('click', function(){
     console.log('click');
@@ -109,6 +113,8 @@ $(document).ready(function () {
           }, 200);
         }
       });
+
+  scrollLink();
 
   });
 
